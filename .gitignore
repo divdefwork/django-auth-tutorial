@@ -1,4 +1,5 @@
 sent_emails/
+*.directory
 ### Django ###
 *.log
 *.pot
