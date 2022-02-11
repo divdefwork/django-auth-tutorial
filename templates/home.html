@@ -1,14 +1,18 @@
 {% extends 'base.html' %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Головна{% endblock %}
 
 {% block content %}
     {% if user.is_authenticated %}
-        Hi {{ user.username }}!
-        <p><a href="{% url 'logout' %}">Log Out</a></p>
-        <p><a href="{% url 'password_reset' %}">Reset Password</a></p>
+        Привіт {{ user.username }}!
+        <p>
+            <a href="{% url 'logout' %}">Вийти</a>
+        </p>
+        <p>
+            <a href="{% url 'password_reset' %}">Скинути пароль</a>
+        </p>
     {% else %}
-        <p>You are not logged in</p>
-        <a href="{% url 'login' %}">Log In</a>
+        <p>Ви не ввійшли в систему</p>
+        <a href="{% url 'login' %}">Увійти</a>
     {% endif %}
 {% endblock %}
