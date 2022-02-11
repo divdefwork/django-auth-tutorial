@@ -1,3 +1,4 @@
+branch: __master__
 ### Will Vincent
 1. ### [✅ Підручник з входу та виходу з Django](https://learndjango.com/tutorials/django-login-and-logout-tutorial)
 
@@ -11,3 +12,10 @@
 
 ---
 
+branch: __myoption__
+
+ЗРОБИТИ
+- при реєстрації вказувати емаіл
+- спеціальної моделі користувача
+- додати функцію «Зміна пароля»
+- підключити електронні листи для надсилання
